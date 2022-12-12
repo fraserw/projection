@@ -1,5 +1,5 @@
 import numpy as np, pylab as pyl
-from compileData import *
+#from compileData import *
 from scipy import interpolate as interp
 import emcee
 
@@ -186,6 +186,8 @@ class project():
 
 if __name__ == "__main__":
 
+    from comlileData import *
+    
     # adopted colours:
     # (u-g) = 1.28 (Wilmer; http://mips.as.arizona.edu/~cnaw/sun.html)
     # (g-r) = 0.44 (Wilmer AND sdss estimate; https://www.sdss.org/dr12/algorithms/ugrizvegasun/)
