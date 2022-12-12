@@ -187,12 +187,17 @@ class project():
 if __name__ == "__main__":
 
     from comlileData import *
-    
+
     # adopted colours:
     # (u-g) = 1.28 (Wilmer; http://mips.as.arizona.edu/~cnaw/sun.html)
     # (g-r) = 0.44 (Wilmer AND sdss estimate; https://www.sdss.org/dr12/algorithms/ugrizvegasun/)
     # (r-z) = 0.11 (Wilmer estimate)
     # (r-J_MKO) = 0.98 (Fraser estimate, published in Schwamb 2019)
+    #
+    # Colours were calculated using synphot (https://synphot.readthedocs.io/en/latest/)
+    # using the model Solar Spectrum grp/hst/cdbs/calspec/sun_reference_001.fits provided
+    # as part of the synphot data files
+    # (https://www.stsci.edu/hst/instrumentation/reference-data-for-calibration-and-tools/synphot-throughput-tables.html)
     #
     # s, u-g, g-r, r-z, r-J, 606-814, 814-139, 139-153
     specSlopes = np.array([[-6.00000,1.21436,0.36133,-0.07366,0.45572,-0.62413,-1.81697,-0.48309],
